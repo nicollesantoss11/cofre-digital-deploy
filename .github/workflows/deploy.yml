@@ -1,0 +1,12 @@
+name: Teste Cofre Digital
+
+on:
+  push:
+
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mostrar segredo
+        run: echo "Senha é ${{ secrets.SENHA }}"
